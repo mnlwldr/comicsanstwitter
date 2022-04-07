@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Comic Sans for Twitter",
+  "version": "1.0",
+  "homepage_url": "https://defer.cc",
+  "description": "Twitter with Comic Sans",
+
+  "icons": {
+    "48": "icons/cs4twitter-48.png"
+  },
+  "web_accessible_resources": ["sheet.css"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "js": ["cs4twitter.js"]
+    }
+  ]
+
+}
